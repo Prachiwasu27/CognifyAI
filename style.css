@@ -1,0 +1,300 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1b4b, #312e81, #0f172a);
+    color: #f1f5f9;
+    overflow-x: hidden;
+}
+
+/* ================= PARTICLES ================= */
+#particles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* ================= INTRO SCREEN ================= */
+.intro-screen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-card {
+    backdrop-filter: blur(25px);
+    background: rgba(255, 255, 255, 0.06);
+    padding: 60px;
+    border-radius: 24px;
+    text-align: center;
+    border: 1px solid rgba(139, 92, 246, 0.4);
+    box-shadow: 0 0 60px rgba(139, 92, 246, 0.4);
+}
+
+.intro-card h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    color: #a78bfa;
+    letter-spacing: 2px;
+}
+
+.intro-card p {
+    margin-top: 12px;
+    color: #cbd5e1;
+}
+
+#enterBtn {
+    margin-top: 30px;
+    padding: 14px 36px;
+    border-radius: 14px;
+    border: none;
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#enterBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.5);
+}
+
+/* ================= MAIN CONTAINER ================= */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+    width: 270px;
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-right: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 45px;
+    color: #a78bfa;
+}
+
+.feature-btn {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    color: #f8fafc;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 15px;
+}
+
+.feature-btn:hover,
+.feature-btn.active {
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+}
+
+/* ================= WORKSPACE ================= */
+.workspace {
+    flex: 1;
+    padding: 50px;
+}
+
+.header h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #c4b5fd;
+    font-size: 32px;
+}
+
+.header p {
+    color: #94a3b8;
+    margin-top: 5px;
+}
+
+/* ================= INPUT ================= */
+textarea {
+    width: 100%;
+    min-height: 160px;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 18px;
+    border: 1px solid rgba(139, 92, 246, 0.4);
+    background: rgba(15, 23, 42, 0.8);
+    color: white;
+    resize: none;
+}
+
+#generateBtn {
+    margin-top: 18px;
+    padding: 12px 32px;
+    border-radius: 14px;
+    border: none;
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#generateBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.5);
+}
+
+/* ================= OUTPUT SECTION ================= */
+.output-section {
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    background: rgba(15, 23, 42, 0.7);
+}
+
+#outputBox {
+    min-height: 120px;
+}
+
+/* ================= SUMMARY / EXPLAIN ================= */
+.summary-box,
+.explain-box {
+    padding: 25px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.05);
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* ================= QUIZ CARD ================= */
+.quiz-card {
+    background: rgba(139, 92, 246, 0.08);
+    border: 1px solid rgba(139, 92, 246, 0.4);
+    border-radius: 20px;
+    padding: 22px;
+    transition: 0.3s ease;
+}
+
+.quiz-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(139, 92, 246, 0.4);
+}
+
+/* ================= FLASHCARD ================= */
+.flashcard-front {
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    color: white;
+}
+
+.flashcard-back {
+    background: #0f172a;
+    color: #c4b5fd;
+    border: 1px solid #8b5cf6;
+}
+
+/* ================= FLASHCARD CONTAINER ================= */
+.flashcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* ================= FLASHCARD ================= */
+.flashcard {
+    width: 220px;
+    height: 160px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flashcard-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flashcard.flip .flashcard-inner {
+    transform: rotateY(180deg);
+}
+/* ================= FLASHCARD CONTAINER ================= */
+.flashcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* ================= FLASHCARD ================= */
+.flashcard {
+    width: 220px;
+    height: 160px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flashcard-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flashcard.flip .flashcard-inner {
+    transform: rotateY(180deg);
+}
+
+/* ================= FRONT & BACK ================= */
+.flashcard-front,
+.flashcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    padding: 20px;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* FRONT SIDE */
+.flashcard-front {
+    background: linear-gradient(135deg, #7c3aed, #6366f1);
+    color: white;
+    box-shadow: 0 10px 25px rgba(124, 58, 237, 0.4);
+}
+
+/* BACK SIDE */
+.flashcard-back {
+    background: #1e1b4b;
+    color: #c4b5fd;
+    border: 1px solid #7c3aed;
+    transform: rotateY(180deg);
+}
+
+/* Hover Lift Effect */
+.flashcard:hover {
+    transform: translateY(-6px);
+    transition: 0.3s ease;
+}
