@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CognifyAI</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <canvas id="particles"></canvas>
+
+    <!-- INTRO SCREEN -->
+    <div class="intro-screen" id="introScreen">
+        <div class="intro-card">
+            <h1>CognifyAI </h1>
+            <p>Intelligent Learning Platform</p>
+            <button id="enterBtn">Enter System</button>
+        </div>
+    </div>
+
+    <!-- MAIN APPLICATION -->
+    <div class="container hidden" id="mainApp">
+
+        <div class="sidebar">
+            <h2 class="logo">CognifyAI – Intelligent Learning Platform</h2>
+
+            <button class="feature-btn active">🧠 Explain Topic</button>
+            <button class="feature-btn">✂ Summarize Notes</button>
+            <button class="feature-btn">❓ Generate Quiz</button>
+            <button class="feature-btn">🗂 Flashcards</button>
+        </div>
+
+        <div class="workspace">
+            <div class="header">
+                <h1>AI Learning Command Center</h1>
+                <p>Smarter learning powered by AI</p>
+            </div>
+
+            <div class="input-section">
+                <textarea id="userInput" placeholder="Enter topic or paste notes here..."></textarea>
+                <button id="generateBtn">Generate</button>
+            </div>
+
+            <div class="output-section">
+                <div class="loader" id="loader"></div>
+                <div id="outputBox">
+                    AI response will appear here...
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
