@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // =====================
 // API ROUTES
 // =====================
-const aiRoutes = require("./aiRoutes");
+const aiRoutes = require('./aiRoutes');
 app.use("/api/ai", aiRoutes);
 
 // =====================
@@ -40,3 +40,4 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 
 });
+
