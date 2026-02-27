@@ -1,4 +1,4 @@
-const { getAIResponse } = require("../services/aiService");
+const { getAIResponse } = require('./aiService');
 
 exports.generateResponse = async (req, res) => {
   try {
@@ -33,3 +33,4 @@ exports.generateResponse = async (req, res) => {
     });
   }
 };
+
